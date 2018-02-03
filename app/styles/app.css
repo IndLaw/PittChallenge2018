@@ -1,10 +1,9 @@
 .symptom-block { 
   margin: 2%; 
-  padding: 15px; 
+  padding: 30px; 
   font-size: 25px;
   background-color: #c0c0c0;
   
-   
 }
 
 .bool-symptom {
@@ -67,6 +66,11 @@ h1 {
     color: black;
  
 }
+
+#ember-basic-dropdown-wormhole{
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 34ms;
+}
  
 
  
@@ -81,7 +85,7 @@ h1 {
 #ember-power-select-option{
  
   background-color: #c0c0c0;
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
  
 }
@@ -135,6 +139,9 @@ h1 {
  
 }
  
+.slider-symptom{
+    padding-bottom: 10px;
+}
 
  
 .slider:hover {
