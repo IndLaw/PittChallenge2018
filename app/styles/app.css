@@ -147,7 +147,9 @@ h1 {
  
 }
  
-
+.ember-text-field{
+    margin-left: -2.5px;
+}
  
 .slider::-webkit-slider-thumb {
  
