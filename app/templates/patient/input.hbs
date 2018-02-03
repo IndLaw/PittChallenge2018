@@ -15,11 +15,20 @@
 	</div>
 	
 	{{#each selectedSymptoms as |sym|}}
-		{{#bool-symptom}}
-			{{sym}}
-		{{/bool-symptom}}
-		{{#slider-symptom}}
-			{{sym}}
-		{{/slider-symptom}}
+		<div class="symptom-block">
+			{{#bool-symptom}}
+				{{sym}}
+			{{/bool-symptom}}
+		</div>
+		<div class="symptom-block">
+			{{#slider-symptom}}
+				{{sym}}
+			{{/slider-symptom}}
+		</div>
+		<div class="symptom-block">
+			{{#text-symptom}}
+				{{sym}}
+			{{/text-symptom}}
+		</div>
 	{{/each}}
 </div>
