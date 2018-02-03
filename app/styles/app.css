@@ -3,7 +3,8 @@
   padding: 30px; 
   font-size: 25px;
   background-color: #c0c0c0;
-  
+  width: 90%;
+   
 }
 
 .bool-symptom {
@@ -43,19 +44,10 @@ body {
 	
 }
  
-.ember-power-select-trigger-multiple-input{
-	
-	color: white;
-}
- 
- .col-xs-6{
-	 
-	 float:left;
- }
- 
+
 .slider slider-horizontal{
 	 
-	 float:left; 
+	float:left; 
 	clear: left;
  }
  
@@ -77,27 +69,8 @@ h1 {
     border-top:solid #c02410 50px;
  
 }
- 
 
- 
-#ember-power-select-option{
- 
-  background-color: #c0c0c0;
-    padding: 10px;
-    font-size: 30px;
- 
-}
- 
- 
-.container-fluid{
-	
-	width: 328px;
-	
-}
- 
-
- 
-.ember-power-select-trigger-multiple-input {
+.multi-select {
  
   font-family: Acherus Grotesque;
     background-color: #c0c0c0;
@@ -108,22 +81,22 @@ h1 {
     cursor: pointer;
  
 }
- 
 
- 
+.my-textarea {
+	width: 100%;
+  font-family: Acherus Grotesque;
+}
 
+.ember-power-select-multiple-option {
+	padding: 5px;
+    font-size: 20px;
+}
 
- 
-
- 
 .slidecontainer {
- 
     width: 100%;
  
 }
- 
 
- 
 .slider {
  
     -webkit-appearance: none;
@@ -141,7 +114,6 @@ h1 {
     padding-bottom: 10px;
 }
 
- 
 .slider:hover {
     opacity: 1;
  
@@ -161,15 +133,7 @@ h1 {
     cursor: pointer;
  
 }
- 
-#ember332{
-	
-	width: 328px;
-	resize: none;
-	overflow: auto;
-	
-}
- 
+
 .slider::-moz-range-thumb {
  
     width: 25px;
@@ -178,4 +142,3 @@ h1 {
     cursor: pointer;
  
 }
- 

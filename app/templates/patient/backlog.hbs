@@ -4,15 +4,46 @@
     <div class="table-full-width">
       <table class="table">
         <thead>
-          <tr>
-            {{#each patients as |patient|}}
-            <th scope="col">{{patient.name}}</th>
-            <th scope="col">{{patient.name}}</th>
-            <th scope="col">{{patient.name}}</th>
-			{{/each}}
-          </tr>
         </thead>
         <tbody>
+			{{#each model as |log|}}
+				<tr class="parent-tr" {{action "viewDetails" log on='doubleClick'}}>
+					<td class="text-center clickable" {{action 'viewDetails' log}}>
+						<span class="glyphicon {{if log.expanded 'glyphicon-chevron-up' 'glyphicon-chevron-down'}}" aria-hidden="true"></span>
+					</td>
+					<td>{{log.time}}</td>
+				</tr>
+				{{#if log.expanded}}
+					<tr>
+						<td colspan="20">
+							<div class="table-full-width">
+									<table class="table">
+										<thead>
+											<th>Symptom</th>
+											{{#if log.isSlider}}
+												<th>Value</th>
+											{{else if log.isText}}
+												<th>Value</th>
+											{{/if}}
+										</thead>
+										<tbody>
+											{{#each log.symptoms as |stat|}}
+												<tr>
+													<td>{{stat.name}}</td>
+													{{#if log.isSlider}}
+														<th>{{stat.value}}</th>
+													{{else if log.isText}}
+														<th>{{stat.value}}</th>
+													{{/if}}
+												</tr>
+											{{/each}}
+									</tbody>
+								</table>
+							</div>
+						</td>
+					</tr>
+				{{/if}}
+			{{/each}}
         </tbody>
       </table>
     </div>

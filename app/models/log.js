@@ -1,11 +1,11 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-	name: DS.attr('string'),
+	time: DS.attr('date'),
+	symptoms: DS.attr(),
+	notes: DS.attr('string'),
 	type: DS.attr('number'),
-	value: DS.attr('number', { defaultValue: 1}),
-	
-	
+
 	isSlider: Ember.computed('type', function() {
 		return this.get('type') === 2;
 	}),
@@ -13,5 +13,4 @@ export default DS.Model.extend({
 	isText: Ember.computed('type', function() {
 		return this.get('type') === 3;
 	})
-	
 });
