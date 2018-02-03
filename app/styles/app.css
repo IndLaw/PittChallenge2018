@@ -13,7 +13,8 @@ src: url('fonts/acherus_grotesque_-_regular-webfont.woff') format('woff');
  
 .ember-power-select-multiple-option {
 	background-color: #c0c0c0;
-	color: black;
+    color: black;
+    padding: 10px;
 	
 }
  
