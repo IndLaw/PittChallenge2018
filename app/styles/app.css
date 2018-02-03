@@ -1,10 +1,113 @@
-.symptom-block {
-	margin: 5px;
-	padding:5px;
-	border-radius: 10px;
-    border: 2px solid #73AD21;
+.symptom-block { 
+  margin: 2%; 
+  padding: 5px; 
 }
+ 
+@font-face {
+font-family: Acherus Grotesque;
+src: url('fonts/acherus_grotesque_-_regular-webfont.woff') format('woff');
+}
+ 
 
-.slider-symptom {
-	min-height: 75px;
+ 
+body {
+    background-color: #f7f6f6;
+  color: black;
+  font-family: Acherus Grotesque;
 }
+ 
+
+ 
+h1 {
+    color: black; 
+}
+ 
+
+ 
+#ember-bootstrap-wormhole {
+    border-top:solid #c02410 50px;
+}
+ 
+
+ 
+#ember-power-select-option{
+  background-color: #c0c0c0;
+    padding: 20px;
+    font-size: 30px;
+}
+ 
+
+ 
+
+ 
+
+ 
+.ember-power-select-trigger-multiple-input {
+  font-family: Acherus Grotesque;
+    background-color: #c0c0c0;
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+ 
+
+ 
+.bool-symptom {
+  font-family: Acherus Grotesque;
+  background-color: #c0c0c0;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  border: 15px solid #f7f6f6;
+  outline-color: #f7f6f6;
+}
+ 
+
+ 
+
+ 
+.slidecontainer {
+    width: 100%;
+}
+ 
+
+ 
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s; 
+}
+ 
+
+ 
+.slider:hover {
+    opacity: 1;
+}
+ 
+
+ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #801515;
+    cursor: pointer;
+}
+ 
+
+ 
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #801515;
+    cursor: pointer;
+}
+ 
