@@ -7,62 +7,49 @@
 }
 
 .bool-symptom {
-  margin: 2%; 
-  background-color: #c0c0c0;
-  color: black;
-  font-size: 25px;
-  padding: 5px;
-  
+    margin: 2%; 
+    background-color: #c0c0c0;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
 }
  
  
 @font-face {
- 
-font-family: Acherus Grotesque;
-src: url('fonts/acherus_grotesque_-_regular-webfont.woff') format('woff');
- 
+    font-family: Acherus Grotesque;
+    src: url('fonts/acherus_grotesque_-_regular-webfont.woff') format('woff');
 }
  
 .ember-power-select-multiple-option {
-	background-color: #c0c0c0;
-	color: black;
-	
+	  background-color: #c0c0c0;
+	  color: black;
 }
  
 body {
- 
-  background-color: #f7f6f6;
-  color: black;
-  font-family: Acherus Grotesque;
- 
+    background-color: #f7f6f6;
+    color: black;
+    font-family: Acherus Grotesque; 
 }
 
 .panel-body{
-	
-	background-color: #f7f6f6;
-	
+  	background-color: #f7f6f6;
 }
  
 .ember-power-select-trigger-multiple-input{
-	
-	color: white;
+    color: white;
 }
  
  .col-xs-6{
-	 
-	 float:left;
+	   float:left;
  }
  
 .slider slider-horizontal{
-	 
-	 float:left; 
-	clear: left;
+	 	 float:left; 
+     clear: left;
  }
  
 h1 {
- 
     color: black;
- 
 }
 
 #ember-basic-dropdown-wormhole{
@@ -73,40 +60,32 @@ h1 {
 
  
 #ember-bootstrap-wormhole {
- 
     border-top:solid #c02410 50px;
- 
 }
  
 
  
 #ember-power-select-option{
- 
-  background-color: #c0c0c0;
+    background-color: #c0c0c0;
     padding: 10px;
     font-size: 30px;
- 
 }
  
  
 .container-fluid{
-	
-	width: 328px;
-	
+	  width: 328px;
 }
  
 
  
 .ember-power-select-trigger-multiple-input {
- 
-  font-family: Acherus Grotesque;
+    font-family: Acherus Grotesque;
     background-color: #c0c0c0;
     color: white;
     padding: 5px;
     font-size: 20px;
     border: none;
     cursor: pointer;
- 
 }
  
 
@@ -117,15 +96,12 @@ h1 {
 
  
 .slidecontainer {
- 
     width: 100%;
- 
 }
  
 
  
 .slider {
- 
     -webkit-appearance: none;
     width: 100%;
     height: 25px;
@@ -134,7 +110,6 @@ h1 {
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
- 
 }
  
 .slider-symptom{
@@ -144,7 +119,6 @@ h1 {
  
 .slider:hover {
     opacity: 1;
- 
 }
  
 .ember-text-field{
@@ -152,18 +126,15 @@ h1 {
 }
  
 .slider::-webkit-slider-thumb {
- 
     -webkit-appearance: none;
     appearance: none;
     width: 25px;
     height: 25px;
     background: #801515;
-    cursor: pointer;
- 
+    cursor: pointer; 
 }
  
 #ember332{
-	
 	width: 328px;
 	resize: none;
 	overflow: auto;
@@ -171,11 +142,9 @@ h1 {
 }
  
 .slider::-moz-range-thumb {
- 
     width: 25px;
     height: 25px;
     background: #801515;
-    cursor: pointer;
- 
+    cursor: pointer; 
 }
  
