@@ -1,7 +1,11 @@
 import Route from '@ember/routing/route';
 
 export default Route.extend({
-	
+	/*
+		type 1: boolean
+		2: scale
+		3: text
+	*/
 	model() {
 		let temp = [];
 		

@@ -1,0 +1,10 @@
+.symptom-block {
+	margin: 5px;
+	padding:5px;
+	border-radius: 10px;
+    border: 2px solid #73AD21;
+}
+
+.slider-symptom {
+	min-height: 75px;
+}
