@@ -10,25 +10,35 @@
 			onchange=(action (mut selectedSymptoms))
 			as |symptom|
 		}}
-		  {{symptom}}
+		  {{symptom.name}}
 		{{/power-select-multiple}}
 	</div>
 	
-	{{#each selectedSymptoms as |sym|}}
-		<div class="symptom-block">
-			{{#bool-symptom}}
-				{{sym}}
-			{{/bool-symptom}}
+	<div class="panel-body">
+		<div class="container-fluid">
+			{{#each selectedSymptoms as |sym|}}
+				<div class="row">
+					<div class="symptom-block">
+						{{#bool-symptom}}
+							{{sym.name}}
+						{{/bool-symptom}}
+					</div>
+				</div>
+				<div class="row">
+					<div class="symptom-block">
+						{{#slider-symptom}}
+							{{sym.name}}
+						{{/slider-symptom}}
+					</div>
+				</div>
+				<div class="row">
+					<div class="symptom-block">
+						{{#text-symptom}}
+							{{sym.name}}
+						{{/text-symptom}}
+					</div>
+				</div>
+			{{/each}}
 		</div>
-		<div class="symptom-block">
-			{{#slider-symptom}}
-				{{sym}}
-			{{/slider-symptom}}
-		</div>
-		<div class="symptom-block">
-			{{#text-symptom}}
-				{{sym}}
-			{{/text-symptom}}
-		</div>
-	{{/each}}
+	</div>
 </div>
