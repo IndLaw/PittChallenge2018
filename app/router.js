@@ -7,6 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('patient', function() {
+    this.route('input');
+  });
 });
 
 export default Router;
