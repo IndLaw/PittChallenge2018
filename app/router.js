@@ -11,6 +11,7 @@ Router.map(function() {
     this.route('input');
     this.route('backlog');
   });
+  this.route('data');
 });
 
 export default Router;

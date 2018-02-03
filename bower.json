@@ -1,6 +1,7 @@
 {
   "name": "pitt-challenge2018",
   "dependencies": {
-    "seiyria-bootstrap-slider": "~6.0.6"
+    "seiyria-bootstrap-slider": "~6.0.6",
+    "chartjs": "2.1.6"
   }
 }

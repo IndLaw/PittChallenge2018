@@ -4,6 +4,14 @@
     <div class="table-full-width">
       <table class="table">
         <thead>
+          <tr>
+            {{#each symptom as |sym|}}
+            <th scope="col">{{sym.name}}</th>
+            <th scope="col">{{sym.name}}</th>
+            <th scope="col">{{sym.name}}</th>
+		    <th scope="col">{{sym.name}}</th>
+			{{/each}}
+          </tr>
         </thead>
         <tbody>
 			{{#each model as |log|}}
