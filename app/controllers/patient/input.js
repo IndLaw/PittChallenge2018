@@ -6,7 +6,7 @@ export default Controller.extend({
 	selectedSymptoms: [],
 	
 	actions: {
-		chooseSymptom(symptom) { 
+		chooseSymptom(symptom) {
 			this.get('selectedSymptoms').addObject(symptom);
 		}
 	}
