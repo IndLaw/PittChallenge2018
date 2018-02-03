@@ -12,7 +12,7 @@ export default Route.extend({
 		
 		temp.addObject(this.get('store').createRecord('symptom', {
 			name: 'Dizziness',
-			type: 1
+			type: 2
 		}));
 		
 		return temp;
