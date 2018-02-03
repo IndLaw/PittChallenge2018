@@ -1,68 +1,33 @@
-.symptom-block { 
-  margin: 2%; 
-  padding: 30px; 
-  font-size: 25px;
-  background-color: #c0c0c0;
-  
-}
-
-.bool-symptom {
-    margin: 2%; 
-    background-color: #c0c0c0;
-    color: black;
-    font-size: 25px;
-    padding: 5px;
-}
- 
- 
 @font-face {
     font-family: Acherus Grotesque;
     src: url('fonts/acherus_grotesque_-_regular-webfont.woff') format('woff');
 }
- 
-.ember-power-select-multiple-option {
-	  background-color: #c0c0c0;
-	  color: black;
-}
- 
+
 body {
     background-color: #f7f6f6;
     color: black;
     font-family: Acherus Grotesque; 
 }
 
-.panel-body{
-  	background-color: #f7f6f6;
-}
- 
-.ember-power-select-trigger-multiple-input{
-    color: white;
-}
- 
- .col-xs-6{
-	   float:left;
- }
- 
-.slider slider-horizontal{
-	 	 float:left; 
-     clear: left;
- }
- 
 h1 {
     color: black;
 }
+
 
 #ember-basic-dropdown-wormhole{
     transition: cubic-bezier(0.19, 1, 0.22, 1);
     transition-duration: 34ms;
 }
  
-
+#ember332{
+	width: 328px;
+	resize: none;
+	overflow: auto;
+}
  
 #ember-bootstrap-wormhole {
     border-top:solid #c02410 50px;
 }
- 
 
  
 #ember-power-select-option{
@@ -75,7 +40,6 @@ h1 {
 .container-fluid{
 	  width: 328px;
 }
- 
 
  
 .ember-power-select-trigger-multiple-input {
@@ -88,18 +52,48 @@ h1 {
     cursor: pointer;
 }
  
-
  
+.symptom-block { 
+  margin: 2%; 
+  padding: 30px; 
+  font-size: 25px;
+  background-color: #c0c0c0;
+}
 
-
+.bool-symptom {
+    margin: 2%; 
+    background-color: #c0c0c0;
+    color: black;
+    font-size: 25px;
+    padding: 5px;
+}
  
+.ember-power-select-multiple-option {
+	  background-color: #c0c0c0;
+	  color: black;
+}
+
+.panel-body{
+  	background-color: #f7f6f6;
+}
+ 
+.ember-power-select-trigger-multiple-input{
+    color: white;
+}
+ 
+.col-xs-6{
+	   float:left;
+ }
+ 
+.slider slider-horizontal{
+	 	 float:left; 
+     clear: left;
+ }
 
  
 .slidecontainer {
     width: 100%;
 }
- 
-
  
 .slider {
     -webkit-appearance: none;
@@ -133,14 +127,7 @@ h1 {
     background: #801515;
     cursor: pointer; 
 }
- 
-#ember332{
-	width: 328px;
-	resize: none;
-	overflow: auto;
-	
-}
- 
+
 .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
