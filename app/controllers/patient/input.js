@@ -25,6 +25,7 @@ export default Controller.extend({
 				notes: that.get('additionalNotes')
 			});
 			
+			this.reset();
 			this.transitionToRoute('patient.backlog');
 		},
 		

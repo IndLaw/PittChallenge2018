@@ -28,20 +28,18 @@
 									<table class="table">
 										<thead>
 											<th>Symptom</th>
-											{{#if log.isSlider}}
-												<th>Value</th>
-											{{else if log.isText}}
-												<th>Value</th>
-											{{/if}}
+											<th>Value</th>
 										</thead>
 										<tbody>
 											{{#each log.symptoms as |stat|}}
 												<tr>
 													<td>{{stat.name}}</td>
-													{{#if log.isSlider}}
-														<th>{{stat.value}}</th>
-													{{else if log.isText}}
-														<th>{{stat.value}}</th>
+													{{#if stat.isSlider}}
+														<td>{{stat.value}}</td>
+													{{else if stat.isText}}
+														<td>{{stat.value}}</td>
+													{{else}}
+														<td></td>
 													{{/if}}
 												</tr>
 											{{/each}}
