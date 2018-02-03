@@ -1,11 +1,11 @@
 <div class="panel panel-default">
 
 	<div class="panel-heading">
-		<h1>Log Symptoms</h1>
+		<h1>Today's Symptoms:</h1>
 
 		{{#power-select-multiple
 			options=symptomOptions
-			placeholder="Select you current sypmtoms."
+			placeholder="Select your current symptoms"
 			selected=selectedSymptoms
 			onchange=(action (mut selectedSymptoms))
 			as |symptom|
