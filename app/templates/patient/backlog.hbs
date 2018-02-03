@@ -5,10 +5,11 @@
       <table class="table">
         <thead>
           <tr>
-            {{#each patients as |patient|}}
-            <th scope="col">{{patient.name}}</th>
-            <th scope="col">{{patient.name}}</th>
-            <th scope="col">{{patient.name}}</th>
+            {{#each symptom as |sym|}}
+            <th scope="col">{{sym.name}}</th>
+            <th scope="col">{{sym.name}}</th>
+            <th scope="col">{{sym.name}}</th>
+		    <th scope="col">{{sym.name}}</th>
 			{{/each}}
           </tr>
         </thead>
