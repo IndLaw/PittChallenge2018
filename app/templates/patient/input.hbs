@@ -19,26 +19,43 @@
 			{{#each selectedSymptoms as |sym|}}
 				<div class="row">
 					<div class="symptom-block">
-						{{#bool-symptom}}
-							{{sym.name}}
-						{{/bool-symptom}}
-					</div>
-				</div>
-				<div class="row">
-					<div class="symptom-block">
-						{{#slider-symptom}}
-							{{sym.name}}
-						{{/slider-symptom}}
-					</div>
-				</div>
-				<div class="row">
-					<div class="symptom-block">
-						{{#text-symptom}}
-							{{sym.name}}
-						{{/text-symptom}}
+						{{#if sym.isSlider}}
+							{{#slider-symptom}}
+								{{sym.name}}
+							{{/slider-symptom}}
+						{{else if sym.isText}}
+							{{#text-symptom}} 
+								{{sym.name}} 
+							{{/text-symptom}}
+						{{else}}
+							{{#bool-symptom}}
+								{{sym.name}}
+							{{/bool-symptom}}
+						{{/if}}
 					</div>
 				</div>
 			{{/each}}
+			
+			<div class="row">
+				<div class="additional-notes">
+					{{textarea placeholder="Additional notes..." value=additionalNotes}}
+				</div>
+			</div>
+			
+			<div class="row">
+				<div>
+					<span>
+						<button class="btn btn-info btn-sm pull-right" style="margin-right: 15px;" {{action 'saveLog'}}>
+							<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>&nbsp;Save Log
+						</button>
+					</span>
+					<span>
+						<button class="btn btn-fill btn-sm btn-danger pull-right" style="margin-right: 15px;" {{action "resetLog"}}>
+							<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>&nbsp;Reset Log
+						</button>
+					</span>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
