@@ -1,8 +1,22 @@
 .symptom-block { 
   margin: 2%; 
-  padding: 5px; 
+  padding: 15px; 
+  font-size: 25px;
+  background-color: #c0c0c0;
+  
    
 }
+
+.bool-symptom {
+  margin: 2%; 
+  background-color: #c0c0c0;
+  color: black;
+  font-size: 25px;
+  padding: 10px;
+  
+ 
+}
+ 
  
 @font-face {
  
@@ -95,22 +109,7 @@ h1 {
  
 
  
-.bool-symptom {
- 
-  font-family: Acherus Grotesque;
-  background-color: #c0c0c0;
-  color: black;
-  width: 322px;
-  font-size: 30px;
-  padding: 8px;
-  border: 5px solid #f7f6f6;
-  outline-color: #f7f6f6;
-  margin-left: 0px;
- 
-    
- 
-}
- 
+
 
  
 

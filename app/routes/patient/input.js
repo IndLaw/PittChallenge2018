@@ -18,6 +18,66 @@ export default Route.extend({
 			name: 'Dizziness',
 			type: 2
 		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Nausea',
+			type: 2
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Vomiting',
+			type: 1
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Loss of Appetite',
+			type: 1
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Hours of Sleep',
+			type: 3
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Muscle Cramps',
+			type: 1 //Florencio wanted something like a sliding scale after wards but
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Swollen Feet or Ankles',
+			type: 1
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Persisting Itching',
+			type: 1
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Chest Pain',
+			type: 1
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Shortness of Breath',
+			type: 1
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Temperature',
+			type: 3
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Pain over Insion region',
+			type: 1
+		}));
+
+		temp.addObject(this.get('store').createRecord('symptom', {
+			name: 'Blood Pressure',
+			type: 3
+		}));
 		
 		return temp;
 	},
