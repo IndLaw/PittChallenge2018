@@ -10,8 +10,8 @@ export default Route.extend({
 		let temp = [];
 		
 		temp.addObject(this.get('store').createRecord('symptom', {
-			name: 'pain',
-			type: 1
+			name: 'Pain',
+			type: 2
 		}));
 		
 		temp.addObject(this.get('store').createRecord('symptom', {

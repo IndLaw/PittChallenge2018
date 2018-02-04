@@ -3,7 +3,9 @@ import Route from '@ember/routing/route';
 export default Route.extend({
 	
 	model() {
-		return this.get('store').peekAll('log');
+		let logs = this.get('store').peekAll('log');
+		
+		return logs;
 	},
 	
 	actions: {
